@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
+    "babel-polyfill": "^6.26.0",
     "connect": "~3.6.6",
     "serve-static": "~1.13.2"
   },
@@ -12,7 +13,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "node app.js",
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w"
+    "compile:sass": "node-sass public/sass/main.scss dist/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,12 @@
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
-    "babel-loader": "^8.0.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "node-sass": "^4.12.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }

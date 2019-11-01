@@ -1,5 +1,5 @@
 // Global app controller
 import x from './teste';
-
-console.log(`I imported ${x} from another module`);
+const nome = 'Diego';
+console.log(`${x} meu nome é ${nome}`);
 
