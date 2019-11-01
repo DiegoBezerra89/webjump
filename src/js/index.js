@@ -1,6 +1,8 @@
 // Global app controller
 import axios from 'axios';
 
+
+
 async function getResults(id) {
     //pegar id do menu, da busca, dos filtros, etc
     try {
