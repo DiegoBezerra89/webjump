@@ -1,0 +1,39 @@
+.main-content {
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.side-menu {
+    
+    &__header {
+        font-size: $small-font-size;
+    }
+
+    &-box {
+        padding: 1.5rem;
+        border: 1px solid $color-secondary;
+        width: 25rem;
+        list-style-position: inside;
+
+        &__categories {
+            &--ul {
+                
+            }
+        }
+        &__colors--ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__colors {
+            &--li {
+            margin-right: 1rem;
+            display: inline-block;
+            }
+            &-preto {
+                background-color: #000;
+            }
+        }
+    }
+    
+}

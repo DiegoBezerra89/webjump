@@ -1,0 +1,67 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: $default-font-size;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-secondary;
+}
+
+.header {
+    &__login {
+        text-align: right;
+        color: $color-white;
+
+        a:link,
+        a:visited{
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    &__box--button {
+        color: $color-white;
+        text-transform: uppercase;
+        font-family: 'Open sans - Extrabold', Arial, Helvetica, sans-serif;
+        font-weight: 900;
+    }
+
+    &__nav {
+        color: $color-white;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+        &--link {
+            text-decoration: none;
+
+            &:link,
+            &:visited {
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+}
+
+
+.side-menu-box {
+    &__big-title {
+        color: $color-primary;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    &__small-title {
+        color: $color-green-title;
+        text-transform: uppercase;
+    }
+
+    &__categories {
+        
+        
+    }
+
+}

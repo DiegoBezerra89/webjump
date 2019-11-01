@@ -1,0 +1,11 @@
+.header__box--button {
+    background-color: $color-primary;
+    border: none;
+    padding: 0 1rem;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+        cursor: pointer;
+    }
+}

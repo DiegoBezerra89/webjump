@@ -1,0 +1,53 @@
+.header {
+    width: 100vw;
+
+    & > * {
+        padding: .5rem 15vw;
+    }
+
+    &__login {
+        display: block;
+        text-align: right;
+        background-color: $color-black;
+    }
+
+    &__box {
+        background-color: $color-white;
+        position: relative;
+        display: block;
+        
+        &--logo {
+            display: inline-block;
+            padding: 3rem 0;
+        }
+        &--search {
+            position: absolute;
+            right: 15vw;
+            display: inline-block;
+            padding: 3rem 0;
+        }
+
+        &--input {
+            width: 25rem;
+            float: left;
+            padding: .5rem;
+        }
+        &--button {
+            float: left;
+            padding: .5rem;
+        }
+    }
+
+    &__nav {
+        background-color: $color-primary;
+        
+        &--ul {
+            list-style: none;
+            display: flex;
+            padding: 1rem 0;
+        }
+        &--li:not(:first-child) {
+            margin-left: 10rem;
+        }
+    }
+}
