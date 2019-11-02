@@ -1,10 +1,10 @@
 .main-content {
     width: 70%;
     margin: 1rem auto;
+    display: flex;
 }
 
-.side-menu {
-    
+.side-menu {   
     &__header {
         font-size: $small-font-size;
     }
@@ -36,4 +36,38 @@
         }
     }
     
+}
+
+.section-products {
+    position: relative;
+    width: 100%;
+    padding:1rem 0;
+    margin-left: 1rem;
+    &__header {
+        display: block;
+    }
+    &__order-box {
+
+    }
+    &__order {
+        position: relative;
+        display: flex;
+        border-top: 1px solid $color-secondary;
+        border-bottom: 1px solid $color-secondary;
+        padding: 1rem 0;
+
+        &--option {
+            position: absolute;
+            right: 0;
+            display: flex;
+        }
+        &--select{
+            margin-left: 1rem;
+        }
+
+        &--display {
+            display: inline-block;
+        }
+            
+    }
 }

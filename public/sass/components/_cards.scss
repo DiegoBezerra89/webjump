@@ -1,5 +1,23 @@
 .card {
     margin: 1rem;
-    border: 1px solid $color-secondary;
-    padding: 1rem;   
+    padding: 0;
+    text-align: center;
+    
+    &__image {
+        display: block;
+        width: 21rem;
+        height: 21.5rem;        
+    }
+
+    &__text {
+        &--name {
+            color: $color-secondary;
+        }
+    }
+
+    &__button {
+        padding: 1rem;
+        background-color: $color-green-title;
+        color: $color-white;
+    }
 }

@@ -1,41 +1,39 @@
 // Global app controller
 //o objeto Search está ok
 import Search from './models/Search';
-
+import * as searchView from './views/searchView';
+import { elements } from './views/base'; 
 const state = {};
 
 //search listener
 const controlSearch = async () => {
     //pegar o id do input
-    const id = 3; //por enquanto ainda não pegou, só para demonstrar
-
-    if(id) {
+    const query = searchView.getInput(); 
+    if(query) {
         //novo objeto Search
         //adiciona ao state
-        state.search = new Search(id);
+        state.search = new Search(query);
 
         //prepare a UI para os resultados
 
 
-        //busca por peças
+        //busca por peças na API
         await state.search.getResults();
 
         //renderiza os resultados na tela
-        console.log(state.search.result);
+        searchView.renderResults(state.search.result);
     }
 }
 
 
 //ao clicar no botao de busca, o json é acionado e traz os dados de itens do id em questão
-document.getElementById('search').addEventListener('submit', e => {
+elements.searchForm.addEventListener('submit', e => {
     e.preventDefault();
     controlSearch();
 });
 
 
 
-const search = new Search(1);
-search.getResults();
 
 
 

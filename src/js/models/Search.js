@@ -3,8 +3,8 @@
 import axios from 'axios';
 
 export default class Search {
-    constructor(id) {
-        this.id = id;
+    constructor(query) {
+        this.id = query;
     }
     async getResults() {
         //pegar id do menu, da busca, dos filtros, etc

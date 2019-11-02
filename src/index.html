@@ -18,7 +18,7 @@
         <div class="header__login"><a href="#">Acesse sua conta</a> ou <a href="#">cadastre-se</a></div><!--buscarei outra maneira mais inteligente-->      
         <div class="header__box">
           <div class="header__box--logo">logo Webjump</div>
-          <form id="search">
+          <form class="header__box--search">
             <input type="text" class="header__box--input" />
             <button class="header__box--button" id="btn" type="submit">Buscar</button> 
           </form>
@@ -42,10 +42,10 @@
             <span class="side-menu__header--type">sapatos</span>
           </div>
           <div class="side-menu-box u-margin-top">
-            <h3 class="side-menu-box__big-title">Filtre por</h2>
+            <h3 class="side-menu-box__big-title big-title">Filtre por</h2>
             <div class="side-menu-box__filter">
               <div class="side-menu-box__categories u-margin-top">
-                <h5 class="side-menu-box__small-title">Categorias</h5>
+                <h5 class="side-menu-box__small-title small-title">Categorias</h5>
                 <ul class="side-menu-box__categories--ul"><!--genérico, para posterior formatação personalizada-->
                   <li class="side-menu-box__categories--li side-menu-box__categories--clothes" ><a href="#" id="1">Roupas</a></li>
                   <li class="side-menu-box__categories--li side-menu-box__categories--shoes" id="2">Sapatos</li>
@@ -53,7 +53,7 @@
                 </ul>
               </div>
               <div class="side-menu-box__colors u-margin-top">
-                <h5 class="side-menu-box__small-title">Cores</h5>
+                <h5 class="side-menu-box__small-title small-title">Cores</h5>
                 <ul class="side-menu-box__colors--ul">
                   <li class="side-menu-box__colors--li side-menu-box__colors--preto">preto</li><!--cores para facilitar a localização, não são as cores reais!-->
                   <li class="side-menu-box__colors--li side-menu-box__colors--laranja">laranja</li>
@@ -65,7 +65,7 @@
                 </ul>
               </div>
               <div class="side-menu-box__type u-margin-top">
-                <h5 class="side-menu-box__small-title">Tipo</h5>
+                <h5 class="side-menu-box__small-title small-title">Tipo</h5>
                 <ul class="side-menu-box__type--ul">
                   <li class="side-menu-box__type--li side-menu-box__type--running">Corrida</li>
                   <li class="side-menu-box__type--li side-menu-box__type--walking">Caminhada</li>
@@ -75,10 +75,9 @@
               </div>
             </div>
           </div>
-
         </section>
 
-        <section class="section-products">
+        <section class="section-products u-margin-top-big">
           <header class="section-products__header">
             <div class="section-products__order-box">
               <h2 class="section-products__order-box--title">Sapatos</h2>
@@ -98,7 +97,7 @@
               </div>
             </div>
           </header>
-          <section class="section-products__box">
+          <!-- <section class="section-products__box">
             <div class="products__card">
               <figure class="products__card--image">
                 <caption class="products__card--caption"></caption>
@@ -108,15 +107,20 @@
               </div>
               <button href="#" class="products__button--buy">Comprar</button>
             </div>
+          </section> -->
+            <div class="products__cards">
+            <!-- <div class="card">
+              <figure class="card__image">
+                <img src="" alt="peça de roupa">
+              </figure>
+              <div class="card__text">
+                <h4 class="card__text--name"></h4>
+                <p class="card__text--price"></p>
+              </div>
+              <button class="card__button">Comprar</button>
+            </div> -->
           </section>
-        </section>
-        <section class="products__cards">
-          <div id="root">
-            
-          </div>
-        </section>
-      </main>
-      <div id="teste"></div>
+        </main>
       <footer class="footer">footer</footer>
   </body>
 </html>

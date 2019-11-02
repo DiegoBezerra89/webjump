@@ -46,22 +46,22 @@ body {
     }
 }
 
+.big-title {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: 900;
+}
 
-.side-menu-box {
-    &__big-title {
-        color: $color-primary;
-        text-transform: uppercase;
-        font-weight: 900;
-    }
+.small-title {
+    color: $color-green-title;
+    text-transform: uppercase;
+}
 
-    &__small-title {
-        color: $color-green-title;
-        text-transform: uppercase;
-    }
+.section-products__order-box--title {
+    color: $color-primary;
+}
 
-    &__categories {
-        
-        
-    }
-
+.card__button {
+    font-weight: 900;
+    text-transform: uppercase;
 }

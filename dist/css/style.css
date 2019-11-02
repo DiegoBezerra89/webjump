@@ -9,6 +9,12 @@ body {
   box-sizing: border-box;
   padding-bottom: 3rem; }
 
+img {
+  width: 99%;
+  height: 100%;
+  border: 1px solid #7c7c7c;
+  border-radius: .3rem; }
+
 html {
   font-size: 62.5%; }
 
@@ -43,17 +49,30 @@ body {
       font-weight: 600;
       color: white; }
 
-.side-menu-box__big-title {
+.big-title {
   color: #CC0D1F;
   text-transform: uppercase;
   font-weight: 900; }
 
-.side-menu-box__small-title {
+.small-title {
   color: #699693;
+  text-transform: uppercase; }
+
+.section-products__order-box--title {
+  color: #CC0D1F; }
+
+.card__button {
+  font-weight: 900;
   text-transform: uppercase; }
 
 .u-margin-top {
   margin-top: 2rem; }
+
+.u-margin-top-medium {
+  margin-top: 3.5rem; }
+
+.u-margin-top-big {
+  margin-top: 5rem; }
 
 .header__box--button {
   background-color: #CC0D1F;
@@ -64,10 +83,30 @@ body {
     background-color: #9e0817;
     cursor: pointer; }
 
+.card__button {
+  display: block;
+  border-radius: .3rem;
+  border: none;
+  width: 100%;
+  transition: all .2s;
+  cursor: pointer; }
+  .card__button:hover {
+    background-color: #81BDB9; }
+
 .card {
   margin: 1rem;
-  border: 1px solid #7c7c7c;
-  padding: 1rem; }
+  padding: 0;
+  text-align: center; }
+  .card__image {
+    display: block;
+    width: 21rem;
+    height: 21.5rem; }
+  .card__text--name {
+    color: #7c7c7c; }
+  .card__button {
+    padding: 1rem;
+    background-color: #699693;
+    color: #fff; }
 
 .header {
   width: 100vw; }
@@ -107,7 +146,8 @@ body {
 
 .main-content {
   width: 70%;
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  display: flex; }
 
 .side-menu__header {
   font-size: 1.4rem; }
@@ -127,9 +167,31 @@ body {
   .side-menu-box__colors-preto {
     background-color: #000; }
 
+.section-products {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  margin-left: 1rem; }
+  .section-products__header {
+    display: block; }
+  .section-products__order {
+    position: relative;
+    display: flex;
+    border-top: 1px solid #7c7c7c;
+    border-bottom: 1px solid #7c7c7c;
+    padding: 1rem 0; }
+    .section-products__order--option {
+      position: absolute;
+      right: 0;
+      display: flex; }
+    .section-products__order--select {
+      margin-left: 1rem; }
+    .section-products__order--display {
+      display: inline-block; }
+
 #root {
   max-width: 119rem; }
 
-.container {
+.products__cards {
   display: flex;
   flex-wrap: wrap; }

@@ -9,3 +9,16 @@
         cursor: pointer;
     }
 }
+
+.card__button {
+    display: block;
+    border-radius: .3rem;
+    border: none;
+    width: 100%;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-green-icon;
+    }
+}
