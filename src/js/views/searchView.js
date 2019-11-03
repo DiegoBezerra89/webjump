@@ -62,7 +62,7 @@ const renderItem = item => {
     let price = item.price;
     price = price.toFixed(2); //coloca dois numeros após a vírgula
     price = price.replace('.',',');
-
+    console.log(item);
     const markup = `
         <div class="card">
             <figure class="card__image">

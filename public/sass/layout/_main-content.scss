@@ -32,11 +32,31 @@
         }
         &__colors {
             &--li {
-            margin-right: 1rem;
+            margin:.5rem .5rem 0 0;
             display: inline-block;
+            width: 3rem;
+            height: 2rem;
             }
-            &-preto {
-                background-color: #000;
+            &--preto {
+                background-color: $color-black;
+            }
+            &--laranja {
+                background-color: $color-orange;
+            }
+            &--amarelo {
+                background-color: $color-yellow;
+            }
+            &--rosa {
+                background-color: $color-pink;
+            }
+            &--azul {
+                background-color: $color-blue;
+            }
+            &--cinza {
+                background-color: $color-grey;
+            }
+            &--bege {
+                background-color: $color-salmon;
             }
         }
     }
