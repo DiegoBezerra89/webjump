@@ -1,20 +1,21 @@
 .header {
     width: 100vw;
 
+    /*1440px
     & > * {
         padding: .5rem 15vw;
     }
-
+    */
 
     &__login {
         display: block;
-        text-align: right;
+        //text-align: right; 1440px
         background-color: $color-black;
     }
 
     &__box {
         background-color: $color-white;
-        position: relative;
+        //position: relative;
         display: block;
     
         
@@ -22,12 +23,12 @@
             display: inline-block;
             padding: 1rem 0;
         }
-        &--search {
+        /*&--search { 1440px
             position: absolute;
             right: 15vw;
             display: inline-block;
             padding: 3rem 0;
-        }
+        }*/
 
         &--input {
             width: 25rem;
@@ -56,7 +57,7 @@
 
 .logo {
     border: none;
-    width: 18rem;
-    height: 5.5rem;
+    width: 15rem;
+    height: 4.5rem;
     margin-left: -1rem;
 }

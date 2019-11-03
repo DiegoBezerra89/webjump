@@ -137,3 +137,17 @@ const initFunction = async (id) => {
 })();
 
 
+//DOM ELEMENTS
+elements.buttonBusca.addEventListener('click', e => {
+    var menuBox = document.querySelector('.header__box--search');    
+    if(menuBox.style.display == "block") {
+        menuBox.style.display = "none";
+    }
+    else {
+        menuBox.style.display = "block";
+    }
+})
+
+
+
+

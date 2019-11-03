@@ -12,5 +12,6 @@ export const elements = {
     clickTenisMenu: document.getElementById('3/3'),
     clickHome: document.getElementById('home'),
     pageName: document.querySelector('.side-menu__header--type'),
-    typeName: document.querySelector('.section-products__order-box--title')
+    typeName: document.querySelector('.section-products__order-box--title'),
+    buttonBusca: document.getElementById('header__logo--button'),
 }

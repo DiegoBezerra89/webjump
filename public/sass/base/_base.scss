@@ -19,8 +19,55 @@ img {
     border-radius: .3rem;
 }
 
-@media (max-width: 1440px) {
-   .main-content {
-       width: 90%;
-   }
+@media screen and (max-width: 320px) {
+    body{
+        width: 100%;
+        margin: 0;
+    }
+    .header {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 0rem;
+        font-size: 1.2rem;
+
+        &__nav {
+            display: none;
+        }
+        &__box--search {
+            display: none;
+        }
+        &__box--logo {
+            margin-left: 3rem;
+        }
+        &__logo--busca {
+            width: 3rem;
+            height: 3rem;
+            display: inline-block;
+
+            img {
+                border: none;
+            }
+        }
+    }
+    
+    .main-content {
+        width: 100%;
+        display: block;
+        padding: .4rem;
+    }
+    .side-menu {
+        display: block;
+        width: 100%;
+    }
+    .section-products__header {
+        width: 100%;
+    }
+    .section-products__order--option {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
 }
