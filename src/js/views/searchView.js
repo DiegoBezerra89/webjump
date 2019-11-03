@@ -15,6 +15,7 @@ export const getInput = () => {
             case 't-shirt' :
             case 't-shirts' :
             case '1':
+                elements.pageName.innerHTML = 'Camisetas';
                 idType = 1;
             break;
             case 'calça' :
@@ -23,6 +24,7 @@ export const getInput = () => {
             case 'calcas' :
             case 'calças' :
             case '2':   
+                elements.pageName.innerHTML = 'Calças';
                 idType = 2;
             break;
             case 'tênis' :
@@ -33,15 +35,25 @@ export const getInput = () => {
             case 'boot' :
             case 'boots' :
             case '3':
+                elements.pageName.innerHTML = 'Tênis/Sapatos';
+                elements.typeName.innerHTML = 'Tênis/Sapatos';
                 idType = 3;
             break;
             default:
                 idType = 'not';
         }
+        
     return idType;
 }
 
-//pega os clicáveis
+//limpa a busca
+export const clearInput = () => {
+    elements.searchInput.value = '';
+};
+
+export const clearResults = () => {
+    elements.searchResList.innerHTML = '';
+};
 
 
 const renderItem = item => {
@@ -64,8 +76,8 @@ const renderItem = item => {
         </div>
     `;
     elements.searchResList.insertAdjacentHTML('beforeend', markup);
-}
+};
 
 export const renderResults = items => {
     items.forEach(renderItem);
-}
+};

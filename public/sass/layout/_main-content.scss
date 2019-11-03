@@ -4,6 +4,11 @@
     display: flex;
 }
 
+.links:visited,
+.links:link {
+    color: $color-secondary;
+}
+
 .side-menu {   
     &__header {
         font-size: $small-font-size;
@@ -11,7 +16,7 @@
 
     &-box {
         padding: 1.5rem;
-        border: 1px solid $color-secondary;
+        border: 1px solid $color-secondary-light;
         width: 25rem;
         list-style-position: inside;
 
@@ -52,8 +57,8 @@
     &__order {
         position: relative;
         display: flex;
-        border-top: 1px solid $color-secondary;
-        border-bottom: 1px solid $color-secondary;
+        border-top: 1px solid $color-secondary-light;
+        border-bottom: 1px solid $color-secondary-light;
         padding: 1rem 0;
 
         &--option {

@@ -14,6 +14,8 @@ const controlSearch = async () => {
         state.search = new Search(query);
 
         //prepare a UI para os resultados
+        searchView.clearInput();
+        searchView.clearResults();
 
 
         //busca por peças na API
@@ -32,8 +34,8 @@ const controlClick = async (id) => {
         //adiciona ao state
         state.search = new Search(id);
 
-        //prepare a UI para os resultados
-
+        //limpa a tela
+        searchView.clearResults();
 
         //busca por peças na API
         await state.search.getResults();
@@ -48,26 +50,69 @@ elements.searchForm.addEventListener('submit', e => {
     controlSearch();
 });
 
+//Pagina inicial
+elements.clickHome.addEventListener('click', e => {
+    e.preventDefault();
+    controlClick(3);
+});
+
+
+//Clicks no menu
+//ao clicar nos links a busca é acionada
 elements.clickCamisetas.addEventListener('click', e => {
     let id = 1;
     e.preventDefault();
+    elements.pageName.innerHTML = 'Camisetas';//não é a melhor maneira de realizar isso, mas por enquanto está ok
+    elements.typeName.innerHTML = 'Camisetas';
+    controlClick(id);
+})
+
+elements.clickCamisetasMenu.addEventListener('click', e => {
+    let id = 1;
+    e.preventDefault();
+    elements.pageName.innerHTML = 'Camisetas';
+    elements.typeName.innerHTML = 'Camisetas';
+    controlClick(id);
+})
+
+elements.clickCalcasMenu.addEventListener('click', e => {
+    let id = 2;
+    e.preventDefault();
+    elements.pageName.innerHTML ='Calças';
+    elements.typeName.innerHTML = 'Calças';
     controlClick(id);
 })
 
 elements.clickCalcas.addEventListener('click', e => {
     let id = 2;
     e.preventDefault();
+    elements.pageName.innerHTML = 'Calças';
+    elements.typeName.innerHTML = 'Calças';
+    controlClick(id);
+})
+
+elements.clickTenisMenu.addEventListener('click', e => {
+    let id = 3;
+    e.preventDefault();
+    elements.pageName.innerHTML = 'Tênis/Sapatos';
+    elements.typeName.innerHTML = 'Tênis/Sapatos';
     controlClick(id);
 })
 
 elements.clickTenis.addEventListener('click', e => {
     let id = 3;
     e.preventDefault();
+    elements.pageName.innerHTML= 'Tênis/Sapatos';
+    elements.typeName.innerHTML = 'Tênis/Sapatos';
     controlClick(id);
 })
 
 
-
+elements.clickHome.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Tênis/Sapatos';
+    elements.typeName.innerHTML = 'Tênis/Sapatos';
+    searchView.clearResults();
+})
 
 
 

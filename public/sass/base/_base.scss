@@ -14,6 +14,11 @@ body {
 img {
     width: 99%;
     height: 100%;
-    border: 1px solid $color-secondary;
+    border: 1px solid $color-secondary-light;
     border-radius: .3rem;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
 }
