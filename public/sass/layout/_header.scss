@@ -1,21 +1,17 @@
 .header {
     width: 100vw;
-
-    /*1440px
     & > * {
         padding: .5rem 15vw;
     }
-    */
-
     &__login {
         display: block;
-        //text-align: right; 1440px
+        text-align: right; 
         background-color: $color-black;
+        padding-right: 3rem;
     }
-
     &__box {
         background-color: $color-white;
-        //position: relative;
+        position: relative;
         display: block;
     
         
@@ -23,12 +19,12 @@
             display: inline-block;
             padding: 1rem 0;
         }
-        /*&--search { 1440px
+        &--search { 
             position: absolute;
             right: 15vw;
             display: inline-block;
             padding: 3rem 0;
-        }*/
+        }
 
         &--input {
             width: 25rem;
@@ -46,9 +42,10 @@
         
         &--ul {
             list-style: none;
-            display: flex;
             padding: 1rem 0;
+            display: flex;
         }
+        
         &--li:not(:first-child) {
             margin-left: 10rem;
         }

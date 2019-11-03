@@ -28,6 +28,8 @@ img {
     font-size: 1.2rem; }
     .header__nav {
       display: none; }
+    .header__menu {
+      display: inline-block; }
     .header__box--search {
       display: none; }
     .header__box--logo {
@@ -51,6 +53,25 @@ img {
     font-size: 1.2rem; }
   .footer {
     padding: 1rem; } }
+
+@media screen and (min-width: 760px) {
+  .header__menu {
+    display: none; }
+  .header__nav {
+    display: block; }
+  .header__logo--busca {
+    display: none; }
+  .header__login {
+    text-align: right; }
+  .header__box--search {
+    position: absolute;
+    right: 2rem;
+    display: inline-block;
+    padding: 3rem 0; }
+  .main-content {
+    display: flex; }
+  .section-products {
+    margin-left: 1rem; } }
 
 html {
   font-size: 62.5%; }
@@ -162,27 +183,26 @@ body {
   border: none; }
 
 .header {
-  width: 100vw;
-  /*1440px
-    & > * {
-        padding: .5rem 15vw;
-    }
-    */ }
+  width: 100vw; }
+  .header > * {
+    padding: .5rem 15vw; }
   .header__login {
     display: block;
-    background-color: #000; }
+    text-align: right;
+    background-color: #000;
+    padding-right: 3rem; }
   .header__box {
     background-color: #fff;
-    display: block;
-    /*&--search { 1440px
-            position: absolute;
-            right: 15vw;
-            display: inline-block;
-            padding: 3rem 0;
-        }*/ }
+    position: relative;
+    display: block; }
     .header__box--logo {
       display: inline-block;
       padding: 1rem 0; }
+    .header__box--search {
+      position: absolute;
+      right: 15vw;
+      display: inline-block;
+      padding: 3rem 0; }
     .header__box--input {
       width: 25rem;
       float: left;
@@ -194,8 +214,8 @@ body {
     background-color: #CC0D1F; }
     .header__nav--ul {
       list-style: none;
-      display: flex;
-      padding: 1rem 0; }
+      padding: 1rem 0;
+      display: flex; }
     .header__nav--li:not(:first-child) {
       margin-left: 10rem; }
 
@@ -206,7 +226,8 @@ body {
   margin-left: -1rem; }
 
 .main-content {
-  width: 100%; }
+  width: 70%;
+  margin: 0 auto; }
 
 .links:visited,
 .links:link {
@@ -222,6 +243,7 @@ body {
 .side-menu-box {
   padding: 1.5rem;
   border: 1px solid #d3d3d3;
+  width: 25rem;
   list-style-position: inside; }
   .side-menu-box__colors--ul {
     list-style: none;
@@ -249,7 +271,9 @@ body {
 
 .section-products {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  padding: 1rem 0;
+  margin-left: 1rem; }
   .section-products__header {
     display: block; }
   .section-products__order {
@@ -272,6 +296,7 @@ body {
   flex-wrap: wrap; }
 
 .footer {
+  width: 70%;
   height: 10rem;
   margin: 0 auto;
   background-color: #CC0D1F; }

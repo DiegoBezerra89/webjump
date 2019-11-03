@@ -148,6 +148,16 @@ elements.buttonBusca.addEventListener('click', e => {
     }
 })
 
+elements.menu.addEventListener('click', e => {
+    var menuBox = document.querySelector('.header__nav');    
+    if(menuBox.style.display == "block") {
+        menuBox.style.display = "none";
+    }
+    else {
+        menuBox.style.display = "block";
+    }
+})
+
 
 
 

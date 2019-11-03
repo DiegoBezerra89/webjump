@@ -14,4 +14,5 @@ export const elements = {
     pageName: document.querySelector('.side-menu__header--type'),
     typeName: document.querySelector('.section-products__order-box--title'),
     buttonBusca: document.getElementById('header__logo--button'),
+    menu: document.getElementById('header__menu--button')
 }

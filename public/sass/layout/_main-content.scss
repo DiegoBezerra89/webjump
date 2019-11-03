@@ -1,5 +1,6 @@
 .main-content {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .links:visited,
@@ -20,7 +21,7 @@
     &-box {
         padding: 1.5rem;
         border: 1px solid $color-secondary-light;
-        //width: 25rem; 1440px
+        width: 25rem; 
         list-style-position: inside;
 
         &__categories {
@@ -69,8 +70,8 @@
 .section-products {
     position: relative;
     width: 100%;
-    //padding:1rem 0;
-    //margin-left: 1rem;
+    padding:1rem 0;
+    margin-left: 1rem;
     &__header {
         display: block;
     }
