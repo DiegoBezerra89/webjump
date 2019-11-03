@@ -5,6 +5,7 @@ import * as searchView from './views/searchView';
 import { elements } from './views/base'; 
 const state = {};
 
+
 //search listener
 const controlSearch = async () => {
     const query = searchView.getInput(); 
@@ -115,6 +116,24 @@ elements.clickHome.addEventListener('click', e => {
 })
 
 
-//colors Filter
+//Init Function
+const initFunction = async (id) => {
+    //pegar o id do input
+    //const query = searchView.getClick(id); 
+        //novo objeto Search
+        //adiciona ao state
+        state.search = new Search(id);
+
+        //busca por peças na API
+        await state.search.getResults();
+
+        //renderiza os resultados na tela
+        searchView.renderResults(state.search.result);
+}
+
+//ao carregar a página esta função é chamada
+(function(){
+    initFunction(3);
+})();
 
 

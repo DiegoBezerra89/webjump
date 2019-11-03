@@ -7,6 +7,11 @@
 .links:visited,
 .links:link {
     color: $color-secondary;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
 }
 
 .side-menu {   

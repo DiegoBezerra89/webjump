@@ -6,15 +6,18 @@
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+@import "base/mediaQueries";
 
 @import "components/buttons";
 @import "components/cards";
 @import "components/side";
 @import "components/spans";
 
+
 @import "layout/header";
 @import "layout/grid";
 @import "layout/main-content";
 @import "layout/products";
+@import "layout/footer";
 
 @import "pages/home";

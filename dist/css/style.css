@@ -7,7 +7,8 @@
 
 body {
   box-sizing: border-box;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  overflow-x: hidden; }
 
 img {
   width: 99%;
@@ -168,7 +169,11 @@ body {
 
 .links:visited,
 .links:link {
-  color: #7c7c7c; }
+  color: #7c7c7c;
+  text-decoration: none; }
+
+.links:hover {
+  text-decoration: underline; }
 
 .side-menu__header {
   font-size: 1.4rem; }
@@ -230,3 +235,9 @@ body {
 .products__cards {
   display: flex;
   flex-wrap: wrap; }
+
+.footer {
+  width: 70%;
+  height: 10rem;
+  margin: 0 auto;
+  background-color: #CC0D1F; }
