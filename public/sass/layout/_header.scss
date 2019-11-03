@@ -5,6 +5,7 @@
         padding: .5rem 15vw;
     }
 
+
     &__login {
         display: block;
         text-align: right;
@@ -15,10 +16,11 @@
         background-color: $color-white;
         position: relative;
         display: block;
+    
         
         &--logo {
             display: inline-block;
-            padding: 3rem 0;
+            padding: 1rem 0;
         }
         &--search {
             position: absolute;
@@ -52,3 +54,9 @@
     }
 }
 
+.logo {
+    border: none;
+    width: 18rem;
+    height: 5.5rem;
+    margin-left: -1rem;
+}

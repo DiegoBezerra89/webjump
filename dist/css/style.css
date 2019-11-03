@@ -15,10 +15,6 @@ img {
   border: 1px solid #d3d3d3;
   border-radius: .3rem; }
 
-a:link,
-a:visited {
-  text-decoration: none; }
-
 html {
   font-size: 62.5%; }
 
@@ -137,7 +133,7 @@ body {
     display: block; }
     .header__box--logo {
       display: inline-block;
-      padding: 3rem 0; }
+      padding: 1rem 0; }
     .header__box--search {
       position: absolute;
       right: 15vw;
@@ -158,6 +154,12 @@ body {
       padding: 1rem 0; }
     .header__nav--li:not(:first-child) {
       margin-left: 10rem; }
+
+.logo {
+  border: none;
+  width: 18rem;
+  height: 5.5rem;
+  margin-left: -1rem; }
 
 .main-content {
   width: 70%;
