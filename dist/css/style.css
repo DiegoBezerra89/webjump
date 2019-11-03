@@ -16,6 +16,10 @@ img {
   border: 1px solid #d3d3d3;
   border-radius: .3rem; }
 
+@media (max-width: 1440px) {
+  .main-content {
+    width: 90%; } }
+
 html {
   font-size: 62.5%; }
 
