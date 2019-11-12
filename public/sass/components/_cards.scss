@@ -1,21 +1,22 @@
 .card {
-    margin: 1rem;
-    padding: 0;
     text-align: center;
+    display: block;
     
     &__image {
         display: block;
-        width: 21rem;
+        width: 100%;
         height: 21.5rem;        
     }
 
     &__text {
         &--name {
             color: $color-secondary;
+            height: 5rem;
         }
     }
 
     &__button {
+        width: 100%;
         padding: 1rem;
         background-color: $color-green-title;
         color: $color-white;

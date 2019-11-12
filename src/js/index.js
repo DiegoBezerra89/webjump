@@ -63,7 +63,7 @@ elements.clickHome.addEventListener('click', e => {
 elements.clickCamisetas.addEventListener('click', e => {
     let id = 1;
     e.preventDefault();
-    elements.pageName.innerHTML = 'Camisetas';//não é a melhor maneira de realizar isso, mas por enquanto está ok
+    elements.pageName.innerHTML = 'Camisetas'; //não é a melhor maneira de realizar isso, mas por enquanto está ok
     elements.typeName.innerHTML = 'Camisetas';
     controlClick(id);
 })
@@ -95,23 +95,23 @@ elements.clickCalcas.addEventListener('click', e => {
 elements.clickTenisMenu.addEventListener('click', e => {
     let id = 3;
     e.preventDefault();
-    elements.pageName.innerHTML = 'Tênis/Sapatos';
-    elements.typeName.innerHTML = 'Tênis/Sapatos';
+    elements.pageName.innerHTML = 'Tênis';
+    elements.typeName.innerHTML = 'Tênis';
     controlClick(id);
 })
 
 elements.clickTenis.addEventListener('click', e => {
     let id = 3;
     e.preventDefault();
-    elements.pageName.innerHTML= 'Tênis/Sapatos';
-    elements.typeName.innerHTML = 'Tênis/Sapatos';
+    elements.pageName.innerHTML= 'Tênis';
+    elements.typeName.innerHTML = 'Tênis';
     controlClick(id);
 })
 
 
 elements.clickHome.addEventListener('click', e => {
-    elements.pageName.innerHTML = 'Tênis/Sapatos';
-    elements.typeName.innerHTML = 'Tênis/Sapatos';
+    elements.pageName.innerHTML = 'Tênis';
+    elements.typeName.innerHTML = 'Tênis';
     searchView.clearResults();
 })
 
@@ -138,8 +138,9 @@ const initFunction = async (id) => {
 
 
 //DOM ELEMENTS
+
 elements.buttonBusca.addEventListener('click', e => {
-    var menuBox = document.querySelector('.header__box--search');    
+    const menuBox = document.querySelector('.header__box--search');    
     if(menuBox.style.display == "block") {
         menuBox.style.display = "none";
     }
@@ -149,7 +150,7 @@ elements.buttonBusca.addEventListener('click', e => {
 })
 
 elements.menu.addEventListener('click', e => {
-    var menuBox = document.querySelector('.header__nav');    
+    const menuBox = document.querySelector('.header__nav');    
     if(menuBox.style.display == "block") {
         menuBox.style.display = "none";
     }

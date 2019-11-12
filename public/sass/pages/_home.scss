@@ -1,0 +1,10 @@
+.full-container {
+    width: 70vw;
+    margin: 0 auto;
+
+    @include respond(tab) {
+        width: 100vw;
+        padding: 1rem;
+    }
+}
+

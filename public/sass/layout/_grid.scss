@@ -1,3 +1,18 @@
+.products {
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22%, auto));
+        grid-gap: 1.33333%;
+        
+        @include respond(phone) {
+            grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+            grid-gap: 1.33333%;
+        }
+    }
+
+   
+}
 
 
 

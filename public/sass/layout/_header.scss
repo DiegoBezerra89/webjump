@@ -1,36 +1,60 @@
 .header {
-    width: 100vw;
-    & > * {
-        padding: .5rem 15vw;
-    }
+    display: block;
+    position: relative;
+
     &__login {
-        display: block;
-        text-align: right; 
+        padding-right: 15vw;
         background-color: $color-black;
-        padding-right: 3rem;
-    }
-    &__box {
-        background-color: $color-white;
-        position: relative;
-        display: block;
-    
-        
-        &--logo {
-            display: inline-block;
-            padding: 1rem 0;
+        display: inline-block;
+        width: 100%;
+
+        @include respond(tab) {
+            padding: 0 2rem 0 0;
         }
-        &--search { 
-            position: absolute;
-            right: 15vw;
+        @include respond(little) {
+            text-align: center;
+            padding: 0;
+            width:100vw;
+        }
+
+    }
+
+    &__box {
+        padding: 2rem 0;
+        position: relative;
+        @include respond (little) {
+            text-align: center;   
+        }
+
+        &--logo {
+            width: 18rem;
             display: inline-block;
-            padding: 3rem 0;
+            height: auto;
+            
+            
+        }
+        
+        &--search {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            padding-top: 1.8rem; 
+
+            @include respond(intermediate) {
+                display: none;
+                margin-right: 3rem;
+            }
         }
 
         &--input {
-            width: 25rem;
+            width: 30rem;
             float: left;
             padding: .5rem;
+            @include respond(little) {
+                width: 15rem; 
+            }
         }
+
         &--button {
             float: left;
             padding: .5rem;
@@ -39,22 +63,37 @@
 
     &__nav {
         background-color: $color-primary;
-        
+        display: inline-block;
+        width: 100vw;
+        margin-left: -15vw;
+        padding: 1rem 0 1rem 15vw;
+
         &--ul {
-            list-style: none;
-            padding: 1rem 0;
-            display: flex;
+            @include respond(intermediate) {
+                text-align: center;
+            }
         }
-        
-        &--li:not(:first-child) {
-            margin-left: 10rem;
+
+        &--li {
+            display: inline-block;
+            margin-right: 5rem;
+            // &:not(:first-child) {
+            //     margin-left: 5rem;
+            // }
+            @include respond(intermediate) {
+               display: block; 
+               margin-right: 0;
+            }
+        }
+
+        @include respond(tab) {
+            margin-left: -1rem;
+            text-align: left;
+            padding-left: 1rem;
+        }
+
+        @include respond(intermediate) {
+            display: none;
         }
     }
-}
-
-.logo {
-    border: none;
-    width: 15rem;
-    height: 4.5rem;
-    margin-left: -1rem;
 }

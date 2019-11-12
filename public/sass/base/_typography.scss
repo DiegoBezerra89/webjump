@@ -12,7 +12,7 @@ body {
 
 .header {
     &__login {
-        //text-align: right;1440px
+        text-align: right;
         color: $color-white;
 
         a:link,
@@ -40,7 +40,12 @@ body {
             &:link,
             &:visited {
                 font-weight: 600;
-                color: white;
+                color: $color-white;
+            }
+
+            &:hover {
+                color: $color-white-2;
+                text-decoration: underline;
             }
         }
     }
@@ -68,4 +73,9 @@ body {
 
 .side-menu__header--type {
     color: $color-primary;
+}
+
+.card__text--name {
+    font-size: 1.5rem;
+    display: inline-block;
 }

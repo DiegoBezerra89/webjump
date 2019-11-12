@@ -1,6 +1,32 @@
+.section-products {
+    width: 100%;
+    margin-left: 2rem;
 
-//container de produtos
-.products__cards {
-    display: flex;
-    flex-wrap: wrap;
+    &__order {
+        border: 1px solid $color-secondary-light;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 1rem;
+        position: relative;
+        padding: 1rem 0;
+        
+        &--display {
+            display: inline-block;
+        }
+
+        &--option {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+
+        &--title {
+            display: inline-block;
+        }
+    }
+
+    @include respond(intermediate) {
+        margin: 0 auto;
+    }
 }
+

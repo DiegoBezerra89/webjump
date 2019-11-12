@@ -1,0 +1,27 @@
+/*
+MEDIA QUERIES
+320 - 768:    phone;
+768 - 1024:   tab;
+1024 - 1440 :    desktop;
+*/
+
+//ORDEM PARA FAZER AS QUERIES
+// base + typography > general layout + grid > page layout > components
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == little {
+        @media only screen and (max-width: 40em) { @content };    //320px
+    }
+    @if $breakpoint == intermediate {
+        @media only screen and (max-width: 40em) { @content };    //640px
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 48em) { @content };    //768px
+    }
+    @if $breakpoint == tab {
+        @media only screen and (max-width: 64em) { @content };    //1024px
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 75em) { @content };    //1440px
+    }
+}

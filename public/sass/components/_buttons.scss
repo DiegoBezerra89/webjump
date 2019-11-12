@@ -22,3 +22,21 @@
         background-color: $color-green-icon;
     }
 }
+
+
+.button__menu {
+    &--hamburguer {
+        position: absolute;
+        top:4rem;
+        left:2rem;
+        display: none;
+        @include respond(intermediate) {
+            display: inline-block;
+        }
+    }
+    &--lupa {
+        position: absolute;
+        top:4rem;
+        right:2rem;
+    }
+}
