@@ -1,8 +1,10 @@
 // Global app controller
 //o objeto Search está ok
 import Search from './models/Search';
+import * as filters from './models/Filters';
 import * as searchView from './views/searchView';
 import { elements } from './views/base'; 
+import axios from 'axios';
 const state = {};
 
 
@@ -116,25 +118,81 @@ elements.clickHome.addEventListener('click', e => {
 })
 
 
+
+
+//FUNÇAO PARA RETORNAR POR COR
+function getFilterItemsByColor (color) {
+    // Inicia requisição AJAX com o axios
+    for(let i = 1; i <= 3; i++) {
+        axios.get(`http://localhost:8888/api/V1/categories/${i}`)
+            .then(response => {
+                response.data.items.forEach(getItemsByColor(color, response.data.items));    
+                // if(response.data.items[i].filter[0].color == 'Laranja'){
+                //     searchView.renderItem(response.data.items[1]);
+                // }
+                    //console.log(response.data.items[1].filter[0].color);//.filter[0].color
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
+    
+}
+
+
+function getItemsByColor (cor, item) { 
+    for(let i = 0; i < item.length; i++){
+        if(item[i].filter[0].color) {
+            if(item[i].filter[0].color == cor){
+                console.log(item[i]);
+                searchView.renderItem(item[i]);
+            }
+        }
+    }
+}
+
+elements.clickPreto.addEventListener('click', e => {
+    let cor = 'Preto';
+    getFilterItemsByColor(cor);
+})
+
+
+// (function(){
+//     getFilterItemsByColor();
+// })();
+
+
+
+
+
+
+
+
+
+
+
+
 //Init Function
 const initFunction = async (id) => {
     //pegar o id do input
-    //const query = searchView.getClick(id); 
-        //novo objeto Search
-        //adiciona ao state
-        state.search = new Search(id);
+    //novo objeto Search
+    //adiciona ao state
+    state.search = new Search(id);
 
-        //busca por peças na API
-        await state.search.getResults();
+    //busca por peças na API
+    await state.search.getResults();
 
-        //renderiza os resultados na tela
-        searchView.renderResults(state.search.result);
+    //renderiza os resultados na tela
+    searchView.renderResults(state.search.result);
 }
 
 //ao carregar a página esta função é chamada
+/*
 (function(){
     initFunction(3);
 })();
+*/
 
 
 //DOM ELEMENTS
@@ -159,6 +217,4 @@ elements.menu.addEventListener('click', e => {
     }
 })
 
-
-
-
+//FILTERS

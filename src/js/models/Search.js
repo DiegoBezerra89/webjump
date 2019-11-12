@@ -11,12 +11,13 @@ export default class Search {
         try {
             const res = await axios(`http://localhost:8888/api/V1/categories/${this.id}`);
             this.result = res.data.items;
-            //console.log(this.result);
         } catch (error) {
             alert ('Resultado de busca não encontrado!');
         }
     }
+    // this.result[0].filter[0].color
 }
+
 
 
 

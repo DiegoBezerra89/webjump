@@ -56,7 +56,7 @@ export const clearResults = () => {
 };
 
 
-const renderItem = item => {
+export const renderItem = item => {
     let name = item.name;
     let image = './' + item.image;
     let price = item.price;
