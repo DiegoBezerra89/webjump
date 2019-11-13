@@ -122,24 +122,18 @@ elements.clickHome.addEventListener('click', e => {
 
 //FUNÇAO PARA RETORNAR POR COR
 function getFilterItemsByColor (color) {
+    searchView.clearResults();
     // Inicia requisição AJAX com o axios
     for(let i = 1; i <= 3; i++) {
         axios.get(`http://localhost:8888/api/V1/categories/${i}`)
             .then(response => {
                 response.data.items.forEach(getItemsByColor(color, response.data.items));    
-                // if(response.data.items[i].filter[0].color == 'Laranja'){
-                //     searchView.renderItem(response.data.items[1]);
-                // }
-                    //console.log(response.data.items[1].filter[0].color);//.filter[0].color
             })
             .catch(error => {
                 console.log(error);
             })
     }
-
-    
 }
-
 
 function getItemsByColor (cor, item) { 
     for(let i = 0; i < item.length; i++){
@@ -153,10 +147,34 @@ function getItemsByColor (cor, item) {
 }
 
 elements.clickPreto.addEventListener('click', e => {
-    let cor = 'Preto';
-    getFilterItemsByColor(cor);
+    getFilterItemsByColor('Preta');
+    getFilterItemsByColor('Preto');
+
 })
 
+elements.clickAmarelo.addEventListener('click', e => {
+    getFilterItemsByColor('Amarela');
+})
+
+elements.clickAzul.addEventListener('click', e => {
+    getFilterItemsByColor('Azul');
+})
+
+elements.clickCinza.addEventListener('click', e => {
+    getFilterItemsByColor('Cinza');
+})
+
+elements.clickRosa.addEventListener('click', e => {
+    getFilterItemsByColor('Rosa');
+})
+
+elements.clickLaranja.addEventListener('click', e => {
+    getFilterItemsByColor('Laranja');
+})
+
+elements.clickBege.addEventListener('click', e => {
+    getFilterItemsByColor('Bege');
+})
 
 // (function(){
 //     getFilterItemsByColor();

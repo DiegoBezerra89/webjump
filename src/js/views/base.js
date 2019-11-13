@@ -11,9 +11,16 @@ export const elements = {
     clickCalcasMenu: document.getElementById('2/2'),
     clickTenisMenu: document.getElementById('3/3'),
     clickHome: document.getElementById('home'),
+    clickPreto: document.getElementById('Preto'),
+    clickLaranja: document.getElementById('Laranja'),
+    clickAmarelo: document.getElementById('Amarelo'),
+    clickRosa: document.getElementById('Rosa'),
+    clickAzul: document.getElementById('Azul'),
+    clickCinza: document.getElementById('Cinza'),
+    clickBege: document.getElementById('Bege'),
     pageName: document.querySelector('.side-menu__header--type'),
     typeName: document.querySelector('.section-products__order-box--title'),
     buttonBusca: document.getElementById('header__logo--button'),
     menu: document.getElementById('header__menu--button'),
-    clickPreto: document.getElementById('Preto')
+    
 }
