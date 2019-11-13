@@ -2,7 +2,7 @@
     &__cards {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(22%, auto));
+        grid-template-columns: repeat(auto-fit, minmax(22%, 24%));
         grid-gap: 1.33333%;
         
         @include respond(phone) {
@@ -10,8 +10,6 @@
             grid-gap: 1.33333%;
         }
     }
-
-   
 }
 
 

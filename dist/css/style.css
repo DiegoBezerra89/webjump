@@ -189,9 +189,6 @@ body {
   height: 1rem;
   display: inline-block; }
 
-.preto {
-  background-color: #000; }
-
 .icons {
   width: 2rem;
   height: 2rem;
@@ -274,7 +271,7 @@ body {
 .products__cards {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22%, auto));
+  grid-template-columns: repeat(auto-fit, minmax(22%, 24%));
   grid-gap: 1.33333%; }
   @media only screen and (max-width: 48em) {
     .products__cards {

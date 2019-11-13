@@ -1,7 +1,6 @@
 // Global app controller
 //o objeto Search está ok
 import Search from './models/Search';
-import * as filters from './models/Filters';
 import * as searchView from './views/searchView';
 import { elements } from './views/base'; 
 import axios from 'axios';
@@ -176,20 +175,6 @@ elements.clickBege.addEventListener('click', e => {
     getFilterItemsByColor('Bege');
 })
 
-// (function(){
-//     getFilterItemsByColor();
-// })();
-
-
-
-
-
-
-
-
-
-
-
 
 //Init Function
 const initFunction = async (id) => {
@@ -205,12 +190,15 @@ const initFunction = async (id) => {
     searchView.renderResults(state.search.result);
 }
 
+
+
 //ao carregar a página esta função é chamada
-/*
 (function(){
     initFunction(3);
 })();
-*/
+
+
+
 
 
 //DOM ELEMENTS
