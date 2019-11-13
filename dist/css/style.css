@@ -13,7 +13,7 @@ MEDIA QUERIES
 
 body {
   box-sizing: border-box;
-  padding-bottom: 3rem;
+  margin-bottom: 2rem;
   overflow-x: hidden; }
 
 img {

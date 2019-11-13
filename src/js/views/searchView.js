@@ -15,6 +15,7 @@ export const getInput = () => {
             case 't-shirt' :
             case 't-shirts' :
             case '1':
+                elements.typeName.innerHTML = 'Camisetas';
                 elements.pageName.innerHTML = 'Camisetas';
                 idType = 1;
             break;
@@ -24,6 +25,7 @@ export const getInput = () => {
             case 'calcas' :
             case 'calças' :
             case '2':   
+                elements.typeName.innerHTML = 'Calças';
                 elements.pageName.innerHTML = 'Calças';
                 idType = 2;
             break;

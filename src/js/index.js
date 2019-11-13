@@ -146,32 +146,46 @@ function getItemsByColor (cor, item) {
 }
 
 elements.clickPreto.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Preto';
+    elements.typeName.innerHTML = 'Preto';
     getFilterItemsByColor('Preta');
     getFilterItemsByColor('Preto');
 
 })
 
 elements.clickAmarelo.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Amarelo';
+    elements.typeName.innerHTML = 'Amarelo';
     getFilterItemsByColor('Amarela');
 })
 
 elements.clickAzul.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Azul';
+    elements.typeName.innerHTML = 'Azul';
     getFilterItemsByColor('Azul');
 })
 
 elements.clickCinza.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Cinza';
+    elements.typeName.innerHTML = 'Cinza';
     getFilterItemsByColor('Cinza');
 })
 
 elements.clickRosa.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Rosa';
+    elements.typeName.innerHTML = 'Rosa';
     getFilterItemsByColor('Rosa');
 })
 
 elements.clickLaranja.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Laranja';
+    elements.typeName.innerHTML = 'Laranja';
     getFilterItemsByColor('Laranja');
 })
 
 elements.clickBege.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Bege';
+    elements.typeName.innerHTML = 'Bege';
     getFilterItemsByColor('Bege');
 })
 
@@ -197,12 +211,17 @@ const initFunction = async (id) => {
     initFunction(3);
 })();
 
+elements.linkLogo.addEventListener('click', e => {
+    elements.pageName.innerHTML = 'Tênis';
+    elements.typeName.innerHTML = 'Tênis';
+    searchView.clearResults();
+    initFunction(3);
+})
 
 
 
 
-//DOM ELEMENTS
-
+//busca e menu hamburguer
 elements.buttonBusca.addEventListener('click', e => {
     const menuBox = document.querySelector('.header__box--search');    
     if(menuBox.style.display == "block") {
@@ -223,4 +242,3 @@ elements.menu.addEventListener('click', e => {
     }
 })
 
-//FILTERS

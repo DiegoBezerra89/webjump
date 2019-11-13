@@ -22,5 +22,5 @@ export const elements = {
     typeName: document.querySelector('.section-products__order-box--title'),
     buttonBusca: document.getElementById('header__logo--button'),
     menu: document.getElementById('header__menu--button'),
-    
+    linkLogo: document.querySelector('.link__logo')
 }
