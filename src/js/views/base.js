@@ -1,5 +1,7 @@
 //árvore de elementos DOM
 
+
+//Todos os elementos DOM utilizados no projeto
 export const elements = {
     searchForm: document.querySelector('.header__box--search'),
     searchInput: document.querySelector('.header__box--input'),

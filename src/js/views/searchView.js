@@ -2,6 +2,8 @@ import { elements } from './base';
 
 
 //input de busca
+
+//pega o valor do input no campo de busca e determina o id referente àquela
 export const getInput = () => {
     let id = elements.searchInput.value;
     let idType;
@@ -57,7 +59,7 @@ export const clearResults = () => {
     elements.searchResList.innerHTML = '';
 };
 
-
+//item é a resposta da requisição axios
 export const renderItem = item => {
     let name = item.name;
     let image = './' + item.image;
